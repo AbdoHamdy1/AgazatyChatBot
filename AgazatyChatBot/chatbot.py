@@ -138,7 +138,7 @@ class LeaveChatbot:
             return self.responses.get("hajj_leave")
         elif any(word in normalized for word in ["بدون مرتب", "بدون اجر", "اجازه خاصه"]):
             return self.responses.get("unpaid_leave")
-        elif any(word in normalized for word in ["وفاه", "وفاة", "حداد", "ميت"]):
+        elif any(word in normalized for word in ["وفاه", "وفاة", "حداد", "ميت", "موت"]):
             return self.responses.get("death_leave")
         elif any(word in normalized for word in ["زواج", "جواز", "فرح", "عريس"]):
             return self.responses.get("marriage_leave")
